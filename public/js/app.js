@@ -10,6 +10,10 @@ if (navigator.serviceWorker) {
         swLocation = '/sw.js';
     }
 
+    if (url.includes('herokuapp')) {
+        swLocation = '/sw.js';
+    }
+
 
     window.addEventListener('load', function () {
 
